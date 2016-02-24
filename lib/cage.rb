@@ -2,16 +2,10 @@ class Cage
   attr_accessor :animal
 
   def initialize
-    @animal = false
+    @animal = nil
   end
 
   def empty?
-    if @animal == false
-      true
-    else false
-    end
+    @animal.nil?
   end
-
-
-
 end

@@ -1,4 +1,3 @@
-# require 'pry'
 class ZooAtCapacity < StandardError
 end
 
@@ -28,11 +27,23 @@ class Zoo
     @cages.each do |cage|
       if cage.empty?
         cage.animal = animal_object
-      elsif condition
-
+        break
+      elsif cage == @cages.last && !cage.empty?
         raise ZooAtCapacity
       end
     end
   end
 
+  def visit
+    greeting = ""
+    @employees.each do |employee|
+      greeting << "#{employee.greet}\n"
+    end
+    @cages.each do |cage|
+      unless cage.empty?
+        greeting << "#{cage.animal.speak}\n"
+      end
+    end
+    greeting
+  end
 end
