@@ -3,6 +3,7 @@ end
 
 class Zoo
   attr_reader :season_opening_date, :season_closing_date, :cages, :employees
+
   def initialize(zoo_name, season_opening_date, season_closing_date)
     @zoo_name = zoo_name
     @season_opening_date = season_opening_date
