@@ -1,5 +1,4 @@
 class Employee
-
   attr_reader :name, :title
 
   def initialize(name, title = "Zoo Keeper")
@@ -14,5 +13,4 @@ class Employee
   def greet
     "#{name} waved hello!"
   end
-
 end

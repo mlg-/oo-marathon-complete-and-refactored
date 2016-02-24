@@ -8,5 +8,4 @@ class Fox
   def speak
     "Ring-ding-ding-ding-dingeringeding!"
   end
-
 end

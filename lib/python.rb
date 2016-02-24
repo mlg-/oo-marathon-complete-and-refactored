@@ -1,8 +1,7 @@
 class Python
-
   include Reptile
-
   attr_reader :name
+
   def initialize(name)
     @name = name
   end
@@ -10,6 +9,4 @@ class Python
   def speak
     "SSSSssssss..."
   end
-
-
 end
